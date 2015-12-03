@@ -111,7 +111,7 @@ end
 
 if zk_url_list.count > 0
   zk_master_option = "--master zk://#{zk_url_list.join(',')},/#{zk_path}"
-  zk_hosts_option = "--zk_hosts #{zk_url_list.join(',')}"
+  zk_hosts_option = "--zk #{zk_url_list.join(',')}"
 end
 
 # If we have been able to find zookeeper master endpoint and zookeeper hosts
